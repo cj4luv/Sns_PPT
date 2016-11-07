@@ -1,0 +1,25 @@
+
+create table board (
+	boardno		int(5) NOT NULL,
+	usernameboard varchar(12),
+	title    varchar(30) NOT NULL,
+	content  varchar(200),
+    date   bigint(15),
+    uploadfilename varchar(30),
+    PRIMARY KEY(boardno)
+
+);    
+
+create table jdbc_test (
+	usernam varchar(12),
+	email 	varchar(30),
+    passwd  varchar(30),
+    PRIMARY KEY(boardno)
+);    
+
+create table friend_info (
+	username varchar(12),
+    friend_request varchar(12),
+    friend_state int(1)
+
+);
